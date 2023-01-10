@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E19F8FE5-E48F-4360-9EC2-6A1808FF30B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DBFINALPROJ</RootNamespace>
+    <AssemblyName>DBFINALPROJ</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMINoption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINoption.Designer.cs">
+      <DependentUpon>ADMINoption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyExpenseAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyExpenseAdmin.Designer.cs">
+      <DependentUpon>DailyExpenseAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELETEstuAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELETEstuAdmin.Designer.cs">
+      <DependentUpon>DELETEstuAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGYMREG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGYMREG.Designer.cs">
+      <DependentUpon>FormGYMREG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHostelAttSTU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHostelAttSTU.Designer.cs">
+      <DependentUpon>FormHostelAttSTU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMESSATTENDENCEstu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMESSATTENDENCEstu.Designer.cs">
+      <DependentUpon>FormMESSATTENDENCEstu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPersonalSTU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonalSTU.Designer.cs">
+      <DependentUpon>FormPersonalSTU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSTUDENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSTUDENT.Designer.cs">
+      <DependentUpon>FormSTUDENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GYMSTUinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GYMSTUinfo.Designer.cs">
+      <DependentUpon>GYMSTUinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HostelSTUinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HostelSTUinfo.Designer.cs">
+      <DependentUpon>HostelSTUinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INSEThosAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INSEThosAdmin.Designer.cs">
+      <DependentUpon>INSEThosAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INSETstuAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INSETstuAdmin.Designer.cs">
+      <DependentUpon>INSETstuAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MESSSTUinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MESSSTUinfo.Designer.cs">
+      <DependentUpon>MESSSTUinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REPAIRhosADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPAIRhosADMIN.Designer.cs">
+      <DependentUpon>REPAIRhosADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STUCHOOSE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STUCHOOSE.Designer.cs">
+      <DependentUpon>STUCHOOSE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UPDATEhosAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UPDATEhosAdmin.Designer.cs">
+      <DependentUpon>UPDATEhosAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UPDATEstuAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UPDATEstuAdmin.Designer.cs">
+      <DependentUpon>UPDATEstuAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VISITORadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VISITORadmin.Designer.cs">
+      <DependentUpon>VISITORadmin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADMINoption.resx">
+      <DependentUpon>ADMINoption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyExpenseAdmin.resx">
+      <DependentUpon>DailyExpenseAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELETEstuAdmin.resx">
+      <DependentUpon>DELETEstuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGYMREG.resx">
+      <DependentUpon>FormGYMREG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHostelAttSTU.resx">
+      <DependentUpon>FormHostelAttSTU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMESSATTENDENCEstu.resx">
+      <DependentUpon>FormMESSATTENDENCEstu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPersonalSTU.resx">
+      <DependentUpon>FormPersonalSTU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSTUDENT.resx">
+      <DependentUpon>FormSTUDENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GYMSTUinfo.resx">
+      <DependentUpon>GYMSTUinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HostelSTUinfo.resx">
+      <DependentUpon>HostelSTUinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INSEThosAdmin.resx">
+      <DependentUpon>INSEThosAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INSETstuAdmin.resx">
+      <DependentUpon>INSETstuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MESSSTUinfo.resx">
+      <DependentUpon>MESSSTUinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="REPAIRhosADMIN.resx">
+      <DependentUpon>REPAIRhosADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STUCHOOSE.resx">
+      <DependentUpon>STUCHOOSE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UPDATEhosAdmin.resx">
+      <DependentUpon>UPDATEhosAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UPDATEstuAdmin.resx">
+      <DependentUpon>UPDATEstuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VISITORadmin.resx">
+      <DependentUpon>VISITORadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
