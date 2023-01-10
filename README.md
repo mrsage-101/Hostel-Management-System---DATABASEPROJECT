@@ -1,6 +1,6 @@
 # Hostel-Management-System---DATABASEPROJECT
 
-To see files go in master branch there you will find all files in DBFINALPROJ folder
+You will see the green button with CODE keyword written on it. Click it and you will see a menu box will apprear, there click Download Zip 
 
 This was my semester (3rd) final project 
 It will keep records of all rooms,furniture,bills,gym bills e.t.c. It will reduce the paper and staff work of that we see in daily life of less futuristic hostels.
